@@ -27,7 +27,9 @@ img {
 body{
    scroll-behavior: smooth;
 }
-
+ul{
+   margin: 0;
+}
 /* =======================================HEADER start========================== */
 
 .header {
@@ -247,14 +249,131 @@ button.navbar-toggler{
    margin-top: 60px;
 }
 #pills-nike{
-   max-height: 400px;
+   /* max-height: 400px; */
 }
 #pills-nike img{
    width: 100%;
-   object-fit: contain;
+   object-fit: cover;
+   border-radius: 8px;
 }
 .tab-content-text{
    background: #1f2020;
    border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 23px 12px 23px 23px;
+}
+.tab-content-text-top h2{
+   color: #ffcb02;
+   text-transform: capitalize;
+   font-size: 24px;
+   line-height: 27px;
+}
+.tab-content-text-top p{
+   color: white;
+   font-size: 16px;
+   line-height: 24px;
+   font-family: 'Montserrat Regular';
+}
+.tab-content-text-top h2 span{
+   text-transform: uppercase;
+}
+.tab-content-text a{
+   display: inline-block;
+   padding: 15px 30px;
+   border-radius: 22px;
+   color: white;
+   background: #ffcb02;
+   font-family: 'Montserrat Bold';
+   text-transform: uppercase;
+}
+.works{
+   margin-bottom: 60px;
+}
+main{
+   background: #282929;
+   padding-bottom: 30px;
+}
+.capabilities__title{
+   font-size: 28px;
+   color: #ffcb02;
+   text-transform: uppercase;
+   display: inline-block;
+   margin-bottom: 30px;
+   line-height: 27px;
+}
+.capabilities__title::before{
+   display: block;
+   content: '';
+   width: 52px;
+   height: 1px;
+   background: white;
+   margin-left: auto;
+   margin-bottom: 8px;
+}
+.capabilities__title::after{
+   display: block;
+   content: '';
+   width: 52px;
+   height: 1px;
+   background: white;
+   margin-right: auto;
+   margin-top: 8px;
+}
+.capabilities .card-header{
+   background: #d3a90b;
+   padding: 15px;
+}
+.card-header button{
+   color: #282929;
+   font-family: 'Montserrat Bold';
+   text-transform: uppercase;
+   font-size: 20px;  
+   display: flex;
+   width: 100%;
+   align-items: center;
+}.card-header button i{
+   font-size: 28px;
+   margin-right: 10px;
+}
+.card{
+   border: 1px solid #d3a90b !important;
+   margin-bottom: 15px;
+}
+.accordion .card:last-child{
+   margin-bottom: 0;
+}
+.capabilities .card-body{
+   background: #1f2020;
+   padding: 20px 15px;
+   color: white;
+   font-family: 'Montserrat Regulat';
+   font-size: 18px;
+   line-height: 24px;
 }
 /* =======================================MAIN end========================== */
+footer{
+   padding: 20px 0;
+   background: #1f2020;
+}
+footer .header__menu{
+   margin: 45px 0;
+}
+.contact a:nth-child(1){
+   margin-right: 30px;
+}
+.contact a{
+   font-size: 20px;
+   color: white;
+}
+@media(max-width:768px){
+   .header__title{
+      font-size: 45px;
+   }
+   .header__description{
+      font-size: 16px;
+   }
+}
