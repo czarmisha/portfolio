@@ -221,8 +221,21 @@ ul{
 }
 button.navbar-toggler{
    color: white;
-   background: #fff;
+   outline: none;
 }
+.navbar-toggler-icon{
+  color: #ffcb02;
+  font-size: 28px;
+}
+button{
+   outline: none;
+   
+}
+button:focus,button:hover{
+   text-decoration: none !important;
+   color: inherit !important;
+}
+
 .nav-pills .nav-link{
    border-radius: 19px;
    text-transform: uppercase;
@@ -351,6 +364,7 @@ main{
    font-size: 18px;
    line-height: 24px;
 }
+
 /* =======================================MAIN end========================== */
 footer{
    padding: 20px 0;
@@ -372,5 +386,10 @@ footer .header__menu{
    }
    .header__description{
       font-size: 16px;
+   }
+}
+@media(max-width:576px){
+   .contact a:nth-child(1){
+      margin-right: 0;
    }
 }
