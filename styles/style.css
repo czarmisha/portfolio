@@ -24,7 +24,7 @@ a:hover {
 img {
    width: 100%;
 }
-body{
+html{
    scroll-behavior: smooth;
 }
 ul{
@@ -247,9 +247,6 @@ button.navbar-toggler{
 }
 .works__accordion{
    margin-top: 60px;
-}
-#pills-nike{
-   /* max-height: 400px; */
 }
 #pills-nike img{
    width: 100%;
