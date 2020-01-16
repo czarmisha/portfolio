@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
    <header class="header d-flex flex-column">
       <nav class="header__nav">
          <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -21,10 +20,41 @@
                data-target="#open-menu" aria-controls="open-menu" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"><i class="fad fa-bars"></i></span>
             </button>
-            <ul class="d-md-flex header__menu collapse" id="open-menu">
-               <li><a href="#history" class="header__link">История</a></li>
+            <ul class="d-md-flex  header__menu collapse" id="open-menu">
+               <li><a href="#history" class="header__link ">История</a></li>
                <li><a href="#works" class="header__link">работы</a></li>
-               <li><a href="#capabilities" class="header__link">контакты</a></li>
+               <li><a href="#capabilities" class="header__link">возможности</a></li>
+               <li>
+                  <!-- Button trigger modal -->
+                  <a type="" class="header__link" data-toggle="modal" data-target="#exampleModalCenter">
+                     Контакты
+                  </a>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Как со мной связаться</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <ul>
+                                 <li>По телефону: <a href="tel:+998973334682">+998 97 333 46 82</a></li>
+                                 <li>По почте: <a href="mailto:asd@asd.ru">asdasd@mail.ru</a></li>
+                              </ul>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                              <button type="button" class="btn btn-primary"><a href="tel:+998973334682">Позвонить</a></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
             </ul>
          </div>
       </nav>
@@ -151,10 +181,10 @@
                </p>
             </div>
          </div>
-         <div class="container-fluid works__accordion d-flex flex-column align-items-center">
+         <div class="container works__accordion">
             <div class="row justify-content-center">
                <div class="col-12 col-md-7">
-                  <ul class="nav nav-pills justify-content-between" id="pills-tab" role="tablist">
+                  <ul class="nav nav-pills justify-content-around" id="pills-tab" role="tablist">
                      <li class="nav-item">
                         <a class="nav-link active" id="pills-nike-tab" data-toggle="pill" href="#pills-nike" role="tab"
                            aria-controls="pills-nike" aria-selected="true">Nike</a>
@@ -182,6 +212,8 @@
                   </ul>
                </div>
             </div>
+         </div>
+         <div class="container-fluid works__accordion d-flex flex-column">
             <div class="tab-content" id="pills-tabContent">
                <div class="tab-pane fade show active" id="pills-nike" role="tabpanel" aria-labelledby="pills-nike-tab">
 
@@ -207,7 +239,7 @@
                </div>
                <div class="tab-pane fade" id="pills-silver" role="tabpanel" aria-labelledby="pills-silver-tab">
                   <div class="row ">
-                     <div class="col-12 col-md-5 col-lg-6"><img src="images/nike.png" alt=""></div>
+                     <div class="col-12 col-md-5 col-lg-6"><img src="images/silver-house.jpg" alt=""></div>
                      <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                         <div class="tab-content-text">
                            <div class="tab-content-text-top">
@@ -227,7 +259,7 @@
                </div>
                <div class="tab-pane fade" id="pills-orange" role="tabpanel" aria-labelledby="pills-orange-tab">
                   <div class="row ">
-                     <div class="col-12 col-md-5 col-lg-6"><img src="images/nike.png" alt=""></div>
+                     <div class="col-12 col-md-5 col-lg-6"><img src="images/orange-market.jpg" alt=""></div>
                      <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                         <div class="tab-content-text">
                            <div class="tab-content-text-top">
@@ -247,7 +279,7 @@
                </div>
                <div class="tab-pane fade" id="pills-tashkent" role="tabpanel" aria-labelledby="pills-tashkent-tab">
                   <div class="row ">
-                     <div class="col-12 col-md-5 col-lg-6"><img src="images/nike.png" alt=""></div>
+                     <div class="col-12 col-md-5 col-lg-6"><img src="images/toshkent.jpg" alt=""></div>
                      <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                         <div class="tab-content-text">
                            <div class="tab-content-text-top">
@@ -267,7 +299,7 @@
                </div>
                <div class="tab-pane fade" id="pills-street" role="tabpanel" aria-labelledby="pills-street-tab">
                   <div class="row ">
-                     <div class="col-12 col-md-5 col-lg-6"><img src="images/nike.png" alt=""></div>
+                     <div class="col-12 col-md-5 col-lg-6"><img src="images/burger.jpg" alt=""></div>
                      <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                         <div class="tab-content-text">
                            <div class="tab-content-text-top">
@@ -287,7 +319,7 @@
                </div>
                <div class="tab-pane fade" id="pills-pizzeria" role="tabpanel" aria-labelledby="pills-pizzeria-tab">
                   <div class="row ">
-                     <div class="col-12 col-md-5 col-lg-6"><img src="images/nike.png" alt=""></div>
+                     <div class="col-12 col-md-5 col-lg-6"><img src="images/pizza.jpg" alt=""></div>
                      <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                         <div class="tab-content-text">
                            <div class="tab-content-text-top">
@@ -310,7 +342,7 @@
       </section>
       <section class="capabilities" id="capabilities">
          <div class="container">
-            <div class="row d-flex flex-column align-items-center">
+            <div class="row flex-column align-items-center">
                <h2 class="capabilities__title">Возможности</h2>
                <div class="col-12 col-md-10 col-lg-8">
                   <div class="accordion" id="accordionExample">

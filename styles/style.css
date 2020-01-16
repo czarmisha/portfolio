@@ -85,7 +85,7 @@ ul{
 .header__link:hover{
    color: #ffcb02;
 }
-.header__menu li:nth-child(3) .header__link{
+.header__menu li:nth-child(4) .header__link{
    margin-right: 0;
 }
 .header__content{
@@ -240,11 +240,14 @@ button:focus,button:hover{
    border-radius: 19px;
    text-transform: uppercase;
    line-height: 24px;
-   padding: 7px 29px;
+   padding: 7px 30px;
    color: #1f2020;
    background: white;
-   margin-right: 42px;
+   /* margin-right: 42px; */
    margin-bottom: 20px;
+}
+.works .nav{
+   padding: 0 20px;
 }
 .nav-pills{
    justify-content: space-between;
@@ -392,4 +395,14 @@ footer .header__menu{
    .contact a:nth-child(1){
       margin-right: 0;
    }
+}
+a:not([href]):not([tabindex]) {
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+}
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+   color: white;
+   text-decoration: none;
+   color: #ffcb02;
 }
